@@ -16,14 +16,14 @@ Include in the top of your `<body>` tag
 ## 2. Include Styles
 Inside `<head>` tag
 ```
-<link rel="stylesheet" href="yourPath/fakeLoader.css" />
+<link rel="stylesheet" href="yourPath/fakeLoader.min.css" />
 ```
 
 ## 3. Include Folowing Libraries
 JQuery reference and the fakeLoader.js
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="../dist/js/fakeLoader.min.js"></script>
+<script src="yourPath/fakeLoader.min.js"></script>
 ```
 
 ## 4. Basic Initialize
@@ -43,6 +43,29 @@ Include in bottom of your `<body>` tag
         spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
         bgColor:"#2ecc71", //Hex, RGB or RGBA colors
         imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
-  });
+    });
+</script>
+```
+
+### Indefinite loader
+```
+<script type="text/javascript">
+    var loader = $("#fakeLoader").fakeLoader({
+        timeToHide: false // Set to false to keep the loader spinning indefinitely
+    });
+</script>
+```
+
+### Manually showing and hiding a fakeloader
+```
+<script type="text/javascript">
+    var loader = $("#fakeLoader").fakeLoader({
+        timeToHide: false, // Set to false to keep the loader spinning indefinitely
+        manual: true
+    });
+
+    loader.start(); // Starts the loader
+
+    loader.stop(); // Stops the loader
 </script>
 ```
