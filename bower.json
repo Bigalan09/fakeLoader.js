@@ -24,5 +24,10 @@
     "test",
     "tests",
     "Demo"
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/Bigalan09/fakeLoader.js.git",
+    "type": "git"
+  },
+  "author": "Bigalan09 <bigalan09@gmail.com>"
 }
