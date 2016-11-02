@@ -56,7 +56,7 @@
             el.css(initStyles).hide();
 
             el.each(function() {
-                var a = settings.spinner;
+                var a = vm.settings.spinner;
                 switch (a) {
                     case 'spinner1':
                         el.html(spinner01);
@@ -85,8 +85,8 @@
 
                 //Add customized loader image
 
-                if (settings.imagePath != '') {
-                    el.html('<div class="fl"><img src="' + settings.imagePath + '"></div>');
+                if (vm.settings.imagePath != '') {
+                    el.html('<div class="fl"><img src="' + vm.settings.imagePath + '"></div>');
                 }
                 centerLoader();
             });
