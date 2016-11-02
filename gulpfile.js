@@ -17,7 +17,7 @@ gulp.task('minify:js', function() {
         .pipe(minify({
             ext: {
                 src: '-debug.js',
-                min: '.js'
+                min: '.min.js'
             }
         }))
         .pipe(gulp.dest('dist/js'));
